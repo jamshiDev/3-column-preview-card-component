@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5em;
+  color: hsl(0, 0%, 95%);
+  padding: 2rem 0;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container {
+  margin: 10rem 1rem;
+  max-width: 60rem;
+  display: flex;
+  position: relative;
+}
+
+.first-container {
+  padding: 3rem;
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.second-container {
+  padding: 3rem;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.third-container {
+  padding: 3rem;
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* SEDAN BUTTON  */
+.first-container button {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+  font-size: 1em;
+  margin-top: 5rem;
+  border-radius: 5rem;
+  width: 10rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+}
+
+.first-container button:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+  border: solid hsl(0, 0%, 95%);
+  outline: none;
+  cursor: pointer;
+}
+
+/* SUVS BUTTON  */
+
+.second-container button {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+  font-size: 1em;
+  margin-top: 5rem;
+  border-radius: 5rem;
+  width: 10rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+}
+
+.second-container button:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+  border: solid hsl(0, 0%, 95%);
+  outline: none;
+  cursor: pointer;
+}
+
+/* LUXURY BUTTON */
+
+.third-container button {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+  font-size: 1em;
+  margin-top: 5rem;
+  border-radius: 5rem;
+  width: 10rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+}
+
+.third-container button:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+  border: solid hsl(0, 0%, 95%);
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 740px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 1rem;
+    width: 90%;
+  }
+
+  .first-container {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+
+  .third-container {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+}
